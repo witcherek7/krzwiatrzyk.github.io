@@ -19,21 +19,21 @@ Ubuntu uses snap as default package installer for Ubuntu software application.
 ## Snap commands
 
 + List all the apps:
-    >snap list
+    <br><i>snap list</i>
 
 + Show tasks and software that is being installed:
-    >snap changes
+    <br><i>snap changes</i>
 
 + Show information about app:
-    >snap info `<app>`
+    <br><i>snap info `<app>`</i>
 
 + Searchning for app in database:
-    >snap find `<app>`
+    <br><i>snap find `<app>`</i>
 
 + Installing app:
-    >sudo snap install `<app>`
+    <br><i>sudo snap install `<app>`</i>
 
 + Uninstalling app:
-    >sudo snap remove `<app>`
+    <br><i>sudo snap remove `<app>`</i>
 
 
