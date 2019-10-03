@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Systemct Cheat Sheet
+title: Systemctl Cheat Sheet
 date: 2019-09-13 8:00:00 +0100
 description: Quickly about most import systemctl commands
 img: 
 fig-caption: # Add figcaption (optional)
-tags: [Docker]
+tags: [Linux, Systemctl, Systemd]
 ---
 
 ## What is systemctl?
