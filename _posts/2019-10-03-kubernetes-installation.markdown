@@ -72,3 +72,35 @@ UUID=9d8a8cd9-3cd7-49cd-ad7b-abf4a41af046 /               ext4    errors=remount
 ### Step 4 - Install Docker
 
 Docker has to be installed on both master and slaves VM's. 
+
+Below is a full command list to install Docker on Ubuntu 16.0.4 .
+
+> Be wary of docker-ce, docker-ce is provided by docker.com, docker.io is provided by Debian.
+
+[Source](https://stackoverflow.com/questions/45023363/what-is-docker-io-in-relation-to-docker-ce-and-docker-ee)
+
+```
+sudo apt-get remove docker docker-engine docker.io
+
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-common -y
+
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+sudo apt-get update -y
+sudo apt-get install docker-ce -y
+
+sudo systemctl start docker
+sudo systemctl enable docker
+```
+
+Another way is to install only docker.io.
+```
+sudo apt-get install docker.io -y
+
+sudo systemctl start docker
+sudo systemctl enable docker
+```
+
+### Step 5 - Install 
