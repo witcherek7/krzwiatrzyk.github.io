@@ -103,4 +103,6 @@ sudo systemctl start docker
 sudo systemctl enable docker
 ```
 
-### Step 5 - Install 
+# CONCLUSION
+
+As this far I abandoned idea of installing K8s manually as with any error it required many steps to reproduce the cluster on 3 VM's. Rest of installation process was done with Ansible.

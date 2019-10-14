@@ -18,3 +18,13 @@ tags: [Linux]
 + <span style="color:orange"><i>cat file | tee -a log | cat > /dev/null</i></span> - intercept stdout and log to file (tee)
 + <span style="color:orange"><i>disown -a && exit</i></span> - exit terminal but leave all processes running, usefull when connecting to cloud and disconnecting could kill the process
 + <span style="color:orange"><i>echo $SHELL</i></span> - checking which shell is installed
++ <span style="color:orange"><i>tail -f /var/log/syslog</i></span> - shows syslog
++ <span style="color:orange"><i>less +F /var/log/syslog</i></span> - shows syslog from the end, with following for updates, `CTRL+C` to stop following and enable scrolling, `SHIFT+F` to start following again
++ <span style="color:orange"><i>reset</i></span> - resets terminal, unbork everything
+
+## Keyboard shortcuts
+
+`CTRL + K` - cuts enerything after cursor, it is great to clear console when cursor is at the beginning
+`CTRL + U` - cuts everything before cursor
+`CTRL + W` - cuts one word before cursor, it uses spaces as seperators
+`CTRL + Y` - restore everything that was cutted
