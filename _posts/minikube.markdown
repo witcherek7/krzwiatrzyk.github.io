@@ -1,0 +1,61 @@
+---
+layout: post
+title: Minikube
+date: 2019-10-27 10:00:00 +0100
+description: Minikube command and guidelines
+img: 
+fig-caption: # Add figcaption (optional)
+tags: [Kubernetes, K8s, Minikube]
+---
+
+## What is Minikube?
+
+Minikube is virtualized kubernetes cluster. It only contains one node which is together master and worker but allows fast and quickly test kubernetes and its capabilities.
+
+## Minikube in VM installation
+
+To install Minikube there are some stuff needed:
++  some virtual machine hypervizor: virtualbox, vmware
++  kubectl
+
+To change run time docker from VM to Minikube VM:
+```
+eval $(minikube docker-env)
+```
+
+## Minikube commands
+
+Start within VM:
+```
+minikube start --vm-driver=none
+```
+
+Chech status of Minikube setup:
+```
+minikube status
+```
+
+Open API GUI in webbrowser:
+```
+minikube dashboard
+```
+
+SSH into Minikube VM:
+```
+minikube ssh
+```
+
+Check enabled addons:
+```
+minikube addons list
+```
+
+
+## Additional info: Kubectl commands
+```
+kubectl cluster-info
+kubectl get pods/nodes/deployments/services
+kubectl get events
+kubectl config view 
+```
+
