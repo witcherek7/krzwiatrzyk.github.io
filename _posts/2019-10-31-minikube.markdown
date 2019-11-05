@@ -18,12 +18,18 @@ To install Minikube there are some stuff needed:
 +  some virtual machine hypervizor: virtualbox, vmware
 +  kubectl
 
-To change run time docker from VM to Minikube VM:
+To change run time docker from Host to Minikube VM:
 ```
 eval $(minikube docker-env)
+THIS IS NOT NEEDED IF --vm-driver=none
 ```
 
 ## Minikube commands
+
+To close whole Minikube cluster:
+```
+minikube delete
+```
 
 Start within VM:
 ```

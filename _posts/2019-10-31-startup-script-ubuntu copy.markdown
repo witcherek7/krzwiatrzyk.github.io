@@ -32,7 +32,8 @@ Guake is a dropdown terminal emulator with simple and fancy usage:
 + `CTRL + SHIFT + R` to change name of tab
 + `CTRL + SHIFT + T` open new tab
 + `CTRL + SHIFT + W` close current tab
-+ `CTRL + Page UP/DOWN` controle tab
++ `CTRL + Page UP/DOWN` choose tab
++ `CTRL + SHIFT + Page UP/DOWN` move tab left/right
 
 
 ## Terminator

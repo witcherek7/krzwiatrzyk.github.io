@@ -109,6 +109,11 @@ Example: `docker update --cpus"1.5" CONTAINER`
 ## Command params
 
 + `--no-trunc` - will not shorten any info, commands will be shown full, container id will be full
++ `-u 500` - run container as non-priviledged user, type *whoami* to check which user was created, GOOD PRACTICE!
++ `--privileged=true` - allow container to access some modules, like change MAC address of containers interface, it gives a lot of priviledges to container, DANGEROUS!
++ `--cap-add=NET_ADMIN` - adds capability to change MAC addres of container
++ `--cap-drop=NET_RAW` - removes capability to access network device
++ 
 
 
 

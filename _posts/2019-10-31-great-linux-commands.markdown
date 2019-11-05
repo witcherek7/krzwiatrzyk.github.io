@@ -24,6 +24,7 @@ tags: [Linux]
 + <span style="color:orange"><i>ps axflww</i></span> - shows processes in tree form
 + <span style="color:orange"><i>pstree -p 'pidof dockerd'</i></span> - another form of showing processes in tree form
 + <span style="color:orange"><i>netstat -anp</i></span> - lists open ports with processes that are responsible for them
++ <span style="color:orange">*command | grep --color -P "^|phrase|*</span> - this will leave all output but will color only searched phrase
 
 
 ## Linux Groups
